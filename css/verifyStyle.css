@@ -1,0 +1,15 @@
+/*******************************
+            Software Engineering 2011 - YouCompare Website
+            Code developed by Anastasios Antoniadis
+            May-June 2011
+            *******************************/
+
+#mainContainer p {
+    
+        position: relative;
+        top: 50%;
+        font-weight: bold;
+        font-size: 20px;
+    
+}
+

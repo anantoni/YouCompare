@@ -1,0 +1,78 @@
+/*****************************************************************************\
+|        \  ,  /                                                            **|
+|     ' ,___/_\___, '           *****         ******                        **|            
+|        \ /o.o\ /              *    *          **                          **|
+|    -=   > \_/ <   =-          *     *         **                          **|
+|        /_\___/_\              *    *          **                          **|
+|     . `   \ /   ` .           *****         ******                        **|
+|         /  `  \                                                           **|
+|_____________________________________________________________________________|
+|   Created By : Antonopoulos Spyridon    1115 2006 00048                   **|
+|   contact me : sdi0600048@di.uoa.gr                                       **|
+|       Project: YouCompare Site - Software Engineering Course Spring 2011  **|
+|   Description: GUI part Css for page become member                        **|
+|        Lines : 78                                                         **|   
+\*****************************************************************************/
+
+#memberMessage{
+    margin:0;
+    padding:0;
+
+    margin-left:55px; 
+    margin-right:5px;
+     border: 2px solid #fcfcfc;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display:block;
+    background-color:#EAEAEA;
+    padding:5px 5px 5px 25px;
+    overflow:hidden;
+    margin-top:30px;
+     vertical-align: middle;
+}
+
+#memberMesgspan{
+    float:left;
+    font-family: Verdana,"Helvetica Neue",Arial,Helvetica,sans-serif;
+    display:block;
+    margin-top:12px;
+    margin-right:70px;
+    margin-left:50px;
+}
+#backToCategory{
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.memb_button:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    border-color: #fcfcfc;
+        -moz-transition: .5s ease-in-out;
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+}
+.memb_button{
+    display:block;
+    /*background-image: -moz-linear-gradient(center bottom , #544C4C 0%, #000000 80%);*/
+    background: url(../images/button_black.jpg) repeat-x;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border:0px;
+    margin-right:20px;
+    float:left;
+    font-size:90%;
+}
+
+#membGif{
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: 25px;
+    vertical-align: middle; 
+}

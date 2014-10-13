@@ -1,0 +1,121 @@
+/*****************************************************************************\
+|   Author  : Zorbas Dimitrios  1115 2007 00078                             **|
+|   contact : zorbash@hotmail.com                                           **|
+|   Project: YouCompare Site - Software Engineering Course Spring 2011      **|
+|   Description: css for the user panel elements    		            **|
+|                                                                           **|   
+\*****************************************************************************/
+
+
+
+/************************************************************************************ USER PANEL CSS - START **********************************************************************************/
+        #userPanel {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 30px;
+                width: 400px;
+                height: 70px;
+                border-right: solid 2px #fcfcfc;
+                border-left: solid 2px #fcfcfc;
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -o-border-radius: 10px;
+        }
+
+        
+        #userPanel .userPanel-staticInfo {
+                width: 100%;
+                height: 70px;	
+                display: block;
+        }
+       
+        #userPanel span.userInfo {
+                display: inline-block;
+                margin-left: 30px;
+                margin-top: 25px;
+                color: white;
+                height: 26px;
+        }
+        
+        #userPanel img {
+                margin-left: 10px;
+                width: 26px;
+                height: 26px;
+        }
+
+	#userPanel div.content {
+            
+                padding: 10px;
+		display: none;
+                border-bottom: solid 2px #fcfcfc;
+       	        background-color: rgba(0, 0, 5, 0.85);
+	        height: 180px;
+        	border-radius: 0 0 10px 10px;
+                -moz-border-radius: 0 0 10px 10px;
+                -o-border-radius: 0 0 10px 10px;
+                color: white;
+
+	}
+        
+        #userPanel input:focus {
+                border: 2px solid #EF4F7A;
+        }
+       
+	#userPanel div.content button#loginButton {
+ 
+		background: url("../images/button_black.jpg") repeat-x scroll 0 0 transparent;
+    		border: 0 none;
+    		color: white;
+    		font-size: 90%;
+		margin-top: 20px;
+                display: inline-block;
+                width: 100px;
+                height: 30px;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -o-border-radius: 8px;
+                
+	}
+        
+        #userPanel div.content button#loginButton:hover {
+ 
+                border-radius: 12px;
+                -moz-border-radius: 12px;
+                -o-border-radius: 12px;
+                cursor: pointer;
+                
+	}
+        
+        #userPanel div.content a{
+                color: white;
+        }
+        
+        #buttonSection {
+                display: block;
+                width: 100%;
+                text-align: center;
+        }
+        
+        #loginResult {
+                display: block;
+                text-align: center;
+                width: 100%;
+        }
+        
+        #userPanel div.content li {
+            vertical-align: middle;
+            
+        }
+        
+        #userPanel div.content li img {
+                width: 16px;
+                height: 16px;
+        }
+        
+        #logged_content a {
+                display: inline-block;
+                margin-left: 15px;
+                height: 16px;
+        }
+/************************************************************************************* USER PANEL CSS - END ***********************************************************************************/

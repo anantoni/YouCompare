@@ -1,0 +1,69 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<!-- including all .js script here -->
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAXd--lQV4PTZa15vSS1WJwhSk7ylEV62EKrGciXTS5v_3b7qr3BRL5VFoZFzv6fGKFnp_c-LkXsI_6g"></script>
+	<script>
+		
+		google.load("jquery", "1");
+		google.load("jqueryui", "1");
+		google.load("prototype", "1");
+		google.load("scriptaculous", "1");
+		google.load("webfont", "1.0.19");
+		function OnLoad() {	
+	 
+		}	
+		google.setOnLoadCallback(OnLoad);
+	</script>
+	<script>
+		//google.load("webfont", "1.0.19");
+	</script>     
+	<!-- the following script loads up some extra fonts -->
+	<script type="text/javascript">
+		WebFont.load({
+             		google: {
+                     		families: [ 'Ubuntu', 'Cantarell', 'Just Another Hand' ,'Lobster' ,'Lekton' ,'Cabin']
+    			}
+     		});
+	</script>
+	<script>
+		var category_id;
+		var entities_to_compare = "";
+		var errorArray = [];
+	</script>
+
+	<script src="http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+	<script>
+		$(function() {
+			$("#navigation [title]").tooltip({
+				position: "center right",
+				offset: [-2, 10],
+				effect: "fade",
+				opacity: 0.7
+			});
+		});
+	</script>
+
+	<script type="text/javascript" src="js/AutoSuggest.js" charset="utf-8"></script> 
+	<script type="text/javascript" src="js/AutoSuggest_jquery.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/xml_parser.js"></script>
+       <script src="js/userPanel.js"></script>
+	
+	<script type="text/javascript">
+		var options_xml = {
+			script: function (input) { return "./includes/autoSearch.php?aid="+input},
+			varname:"input"
+		};
+		var as_xml = new bsn.AutoSuggest('testinput_xml', options_xml);
+	</script>
+
+        <script src="js/login.js"></script>
+	<!-- importing all .css files here -->
+        <link rel="stylesheet" type="text/css" href="css/resetStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/genericStyleB.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltipStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/searchStyle.css" />
+	<link rel="stylesheet" href="./css/autosuggest.css" type="text/css" media="screen" charset="utf-8" />
+                

@@ -1,0 +1,260 @@
+/* 
+    Document   : createCategoryStyle.css
+    Created on : 26 Μαϊ 2011, 9:47:50 μμ
+    Author     : Lelouch
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#mainContainer hr {
+    width: 50%;
+}
+
+#create_category {
+    text-align: left;
+    padding: 0 0 0 0;
+    display: block;
+    overflow: hidden;
+}
+
+.create_category_label {
+
+    margin-right: 30px;
+    background-color: red;
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 30px;
+    padding: 0;
+
+}
+
+#mainContainer textarea {
+
+    display: inline-block;
+    
+}
+
+#mainContainer ul{
+    
+    display: block;
+
+}
+
+#mainContainer ul li {
+    
+    display: inline-block;
+    vertical-align: top;
+}
+
+#create_category div {
+    
+    display: inline-block;
+    
+}
+
+#addCountableAttributeButton {
+    position: relative;
+    left: -10%;
+    
+}
+
+#addDistinctAttributeButton {
+    position: relative;
+    left: 0%;
+  
+}
+
+#addUncomparableAttributeButton {
+    position: relative;
+    left: +10%;
+    
+}
+
+/* Z-index of #mask must lower than #boxes .window */
+.ModalWindow {
+
+            padding: 20px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            position: absolute;
+            z-index: 9000;
+            background-color: #000;
+            display: none;
+            width: 800px;
+            height: 400px;
+            top: 25%;
+            left: 35%;
+            text-align: left;
+            color: blue;
+            opacity: 0.9;
+            overflow: auto;
+}
+   
+#boxes .window {
+          position:absolute;
+          width: 440px;
+          height: 200px;
+/*          display: none;*/
+          z-index: 9999;
+          padding: 20px;
+}
+ 
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+          width:375px; 
+          height:203px;
+}
+
+.addAttributeButton {
+    
+            border: 0;
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+            height: 40px;
+            font-weight: bold;
+            
+            display: inline-block;
+            vertical-align: middle;
+            /************ BORDER RADIUS **************/
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+
+             background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0, rgb(235,240,236)),
+                    color-stop(0.99, rgb(1,55,97)),
+                    color-stop(0.47, rgb(22,176,247))
+            );
+            background-image: -moz-linear-gradient(
+                    center bottom,
+                    rgb(235,240,236) 0%,
+                    rgb(1,55,97) 99%,
+                    rgb(22,176,247) 47%
+            );
+
+}
+
+.addAttributeButton img {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+    
+}
+
+.addAttributeButton:hover {
+    
+            font-weight: bold;
+            color: white;
+            background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0.02, rgb(77,62,52)),
+                    color-stop(0.99, rgb(51,4,10)),
+                    color-stop(0.47, rgb(245,22,22))
+            );
+            background-image: -moz-linear-gradient(
+                    center bottom,
+                    rgb(77,62,52) 2%,
+                    rgb(51,4,10) 99%,
+                    rgb(245,22,22) 47%
+            );
+        
+}
+
+.closeButton {
+                    background-image: url('images/close.png');
+                    background-repeat:no-repeat;
+                    background-attachment:fixed;
+                    background-position: left; 
+}
+
+#createCategoryButton button:enabled {
+    
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            background-color: #00cc33;
+            color: white;
+            border-width: 0;
+            background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.75, rgb(83,201,24)), color-stop(0.29, rgb(34,122,72)) );
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            
+}
+
+#createCategoryButton .createCategoryButtonEnabled:hover {
+    
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            background-color: #00cc33;
+            color: black;
+            border-width: 0;
+            background-image: -webkit-gradient( linear, left bottom,left top, color-stop(0.75, rgb(116,194,0)), color-stop(0.2, rgb(151,255,15)));
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+    
+}
+
+#createCategoryButton :disabled {
+            
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            border-width: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            border: 2px ButtonFace;
+            color: GrayText;
+            cursor: no-drop;
+            
+}
+
+p.trigger {	
+	width: 100%;
+	font-weight: bold;
+	display: block;
+}
+
+p.trigger a {
+	color: black;
+	text-decoration: none;
+}
+
+p.trigger a:hover { color: red; }
+
+/*.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	background: #f0f0f0 url(toggle_block_stretch.gif) repeat-y left top;
+	overflow: hidden;
+	font-size: 1.2em;
+	width: 500px;
+	clear: both;
+}*/
+/*.toggle_container #create_category {
+	padding: 20px; --Padding of Container--
+	background: url(toggle_block_btm.gif) no-repeat left bottom; --Bottom rounded corners--
+}*/

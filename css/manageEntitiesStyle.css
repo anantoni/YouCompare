@@ -1,0 +1,556 @@
+/*****************************************************************************\
+|        \  ,  /                                                            **|
+|     ' ,___/_\___, '           *****         ******                        **|            
+|        \ /o.o\ /              *    *          **                          **|
+|    -=   > \_/ <   =-          *     *         **                          **|
+|        /_\___/_\              *    *          **                          **|
+|     . `   \ /   ` .           *****         ******                        **|
+|         /  `  \                                                           **|
+|_____________________________________________________________________________|
+|   Created By : Antonopoulos Spyridon    1115 2006 00048                   **|
+|   contact me : sdi0600048@di.uoa.gr                                       **|
+|       Project: YouCompare Site - Software Engineering Course Spring 2011  **|
+|   Description: GUI part Css for page manage entities                      **|
+|        Lines : 556                                                        **|   
+\*****************************************************************************/
+
+
+
+input,textarea{
+    vertical-align: middle;
+}
+#MgEnMessage{
+    margin:0;
+    padding:0;
+
+    margin-left:55px; 
+    margin-right:15px;
+     border: 2px solid #fcfcfc;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display:block;
+    background-color:#EAEAEA;
+    padding:5px 5px 5px 25px;
+    overflow:hidden;
+    margin-top:30px;
+     vertical-align: middle;
+}
+
+#MgEnMesgspan{
+    float:left;
+    font-family: Verdana,"Helvetica Neue",Arial,Helvetica,sans-serif;
+    display:block;
+    margin-top:12px;
+    margin-right:0px;
+    margin-left:10px;
+}
+#backToCategory{
+    float: right;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.MgEn_button:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    border-color: #fcfcfc;
+        -moz-transition: .5s ease-in-out;
+        -webkit-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+}
+.MgEn_button{
+    display:block;
+    /*background-image: -moz-linear-gradient(center bottom , #544C4C 0%, #000000 80%);*/
+    background: url(../images/button_black.jpg) repeat-x;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border:0px;
+    margin-right:20px;
+    float:left;
+    font-size:90%;
+}
+
+#MgEnGif{
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: 25px;
+    vertical-align: middle; 
+}
+
+.mainOuterRateEn{
+	display:inline-block;
+        margin:0;
+        padding:0;
+        vertical-align:bottom;
+	width: 126px;
+    	height: 24px;
+    	background: url(../images/star_blank_.png) repeat-x;
+	zoom: 1;
+	*display: inline;
+
+}
+.mainInnerRateEn {
+        margin:0;
+        padding:0;
+        vertical-align: top;
+  	height: 24px;
+  	background: url(../images/star_full_.png) repeat-x;
+ }
+
+ 
+ /*add /edit panel*/
+ #AddEntDiv{
+    padding: 0;
+    margin : 0;
+    border: 2px solid #fcfcfc;
+    background-color:#EAEAEA;
+
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; 
+    text-align: center;
+    width: 96%;
+    margin-left:2%;
+    margin-right:2%;  
+    padding-bottom:30px;
+ }
+ 
+ #AddItemInner{
+     padding:0;
+     margin:0;
+     margin-top:20px;
+     padding-left:10px;
+     padding-right:10px;
+     width:100%;
+     overflow:hidden;
+ }
+ 
+ 
+ 
+#AddItemInner tbody{
+
+}
+#AddItemInner tbody tr{
+ 
+}
+#AddItemInner tbody tr th{
+    padding-right: 12px;
+    text-align: left;
+    vertical-align: middle;
+    width: 0;
+}
+#AddItemInner tbody tr td{
+    text-align:left;
+    width:100%;
+}
+
+.dialogLabel{
+    
+}
+.dialogOptional{
+     font-size: 92%;
+    margin-left: 10px;
+}
+#addEnInBtns{
+    text-align:left;
+    vertical-align: middle;
+    padding-left: 100px;
+}
+.MgEnInSubmitButton{
+  padding:0;
+    margin:0;
+    background: url(../images/button_black.jpg) repeat-x;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 50px;
+    text-decoration: none;
+    border:2px solid #fcfcfc;
+    margin-left: 30px;  
+    
+}
+.MgEnInResetButton{
+    padding:0;
+    margin:0;
+    background: url(../images/button_black.jpg) repeat-x;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 50px;
+    text-decoration: none;
+    border:2px solid #fcfcfc;
+    margin-left: 30px;
+}
+.MgEnInCloseButton{
+    padding:0;
+    margin:0;
+    background: url(../images/button_black.jpg) repeat-x;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 50px;
+    text-decoration: none;
+        border:2px solid #fcfcfc;
+    margin-left: 30px;
+}
+      
+.MgEnInSubmitButton:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.10);
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.MgEnInResetButton:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.10);
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.MgEnInCloseButton:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.10);
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+/* main panel */
+#MgEnPanel{
+ 	/*background-color:#DFE0E2;*/
+        margin:0;
+	text-align: center; /* ie hack */
+	border:solid 1px #333;
+        margin-top:10px;
+        margin-left:55px; 
+        margin-right:15px;
+        margin-bottom:50px;
+        overflow:auto;
+        background-color:#EAEAEA;
+        padding:25px 5px 5px 5px;
+        border: 2px solid #fcfcfc;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        padding-bottom:40px;
+
+}   
+    
+
+.Table {
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    color: #000;
+    table-layout: fixed;
+    width: 80%;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    background: url(../images/table-background.jpg) repeat;
+}
+
+
+
+.table_toggle,.table_notoggle {
+    display: block;
+    text-shadow: black 1px -1px 0.5;
+    font-weight: bold;
+    margin-top: 30px;
+    
+    
+    border: 2px solid #fcfcfc;
+    background-color:#ECE7E7;
+
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; 
+   
+    text-align: left;
+    margin-left:2%;
+    margin-right:2%;
+    padding-left:2%;
+    
+}
+
+.table_toggle:hover{
+    background-color:#B5C3E0;
+    cursor:pointer;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);  
+}
+
+.MgEnTable{  
+    padding: 0;
+    margin : 0;
+    border: 2px solid #fcfcfc;
+    background-color:#E8E1ED;
+
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; 
+    text-align: center;
+    width: 96%;
+    margin-left:2%;
+    margin-right:2%;
+    
+
+}
+.MgEnEntName{
+    text-align:left !important;
+}
+
+.MgEnTable thead tr{
+   
+}
+
+.MgEnTable thead tr th{
+    padding:0;
+    margin:0;
+    border: 1px solid #fcfcfc;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; 
+    background-color:#E8E8E8;
+}
+.headHover:hover{
+   cursor:pointer;
+   background-color: #6CA1FC;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+.MgEnTable tbody {
+    
+}
+
+.MgEnTable tbody tr th{
+    padding:0;
+    margin:0;
+    padding: 2px 2px 2px 19px;
+    width:30%;
+    max-width:30%;
+}
+.MgEnTable tbody tr td{
+
+}
+
+#MgEnAddButton{
+    padding:0;
+    margin:0;
+    background: url("../images/button_black_wide.jpg") repeat-x scroll 0 0 transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 95%;
+    padding: 5px 35px;
+    text-decoration: none;
+}
+#MgEnAddButton:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.10);
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+.MgEnVisitButton,
+.MgEnDeleteButton,
+.MgEnEditButton{
+    padding:0;
+    margin:0;
+    background: url(../images/button_black.jpg) repeat-x;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 3px 13px;
+    text-decoration: none;
+    border:0px;
+    font-size:85%;  
+    margin-left: 20px;
+}
+
+
+.MgEnVisitButton:hover,
+.MgEnDeleteButton:hover,
+.MgEnEditButton:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,.10);
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+
+}
+
+
+.MgEnButton{
+    text-align:center;
+    width:35%;
+}
+
+#highlightName{
+    margin:0;
+    padding: 2px 2px 2px 19px;
+    background-color: #6CA1FC;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+#highlightName2{
+    margin:0;
+    padding:0;
+    background-color: #6CA1FC;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+
+
+#confirmBox{
+	background:url('../images/body_bg.jpg') repeat-x left bottom #e5e5e5;
+	width:460px;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin:-130px 0 0 -230px;
+	border: 1px solid rgba(33, 33, 33, 0.6);
+	
+	-moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+	-webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+	box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+        
+         -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: 2px solid #fcfcfc;
+        
+}
+
+#confirmBox h1,
+#confirmBox p{
+	font:26px/1 'Cuprum','Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	background:url('../images/header_bg.jpg') repeat-x left bottom #f5f5f5;
+	padding: 18px 25px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+	color:#666;
+}
+
+#confirmBox h1{
+	letter-spacing:0.3px;
+	color:#888;
+}
+
+#confirmBox p{
+	background:none;
+	font-size:16px;
+	line-height:1.4;
+	padding-top: 35px;
+}
+
+#confirmButtons{
+	padding:15px 0 30px;
+	text-align:center;
+}
+
+#confirmBox .button{
+	display:inline-block;
+	background-color:#6DA9C8;
+	color:white;
+	position:relative;
+	height: 33px;
+	
+	font:17px/33px 'Cuprum','Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	
+	margin-right: 15px;
+	padding: 0 35px 0 40px;
+	text-decoration:none;
+	border:none;
+         -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#confirmBox .button:last-child{	
+    margin-left: 20px;
+    margin-right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#confirmBox .button:hover{
+    cursor: pointer;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-transition: .4s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    background-color: #1B5CCD;
+}
+
+
+html div.addEntityDialog{
+	background-color: rgba(255,255,255,0.5);
+	font-size: 80%;
+}
+
+
+#imageEditEnt{
+    height: 90px;
+    margin-left: 20px;
+    vertical-align: middle;
+    width: 90px;
+    border:2px #fcfcfc;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}

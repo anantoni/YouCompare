@@ -1,0 +1,238 @@
+/*****************************************************************************\
+|   Author  : Zorbas Dimitrios  1115 2007 00078                             **|
+|   contact : zorbash@hotmail.com                                           **|
+|   Project: YouCompare Site - Software Engineering Course Spring 2011      **|
+|   Description: Gui Part for page browse entity  (css)                     **|
+|                                                                           **|   
+\*****************************************************************************/
+
+#browseEntity{
+	
+
+	
+	/*** BOX MODEL ***/
+	padding: 1%;
+	
+	
+	
+}
+#browseEntity button{
+	background-color: #544C4C;
+	background: url("../images/button_black.jpg") repeat-x scroll 0 0 transparent;
+	/*background: -moz-linear-gradient(center bottom , #000000 0%, #544C4C 80%);
+	background: -webkit-linear-gradient(center bottom , #000000 0%, #544C4C 80%);
+	background: -o-linear-gradient(center bottom , #000000 0%, #544C4C 80%);
+	background: -ms-linear-gradient(center bottom , #000000 0%, #544C4C 80%);
+	background: -linear-gradient(center bottom , #000000 0%, #544C4C 80%);
+	*/
+	color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	border-radius: 8px 8px 8px 8px;
+	cursor: pointer;
+	
+}
+#browseEntity button:hover {
+	/*
+	background: -moz-linear-gradient(center bottom , #544C4C 0%, #000000 80%);
+	background: -webkit-linear-gradient(center bottom , #544C4C 0%, #000000 80%);
+	background: -o-linear-gradient(center bottom , #544C4C 0%, #000000 80%);
+	background: -ms-linear-gradient(center bottom , #544C4C 0%, #000000 80%);
+	background: -linear-gradient(center bottom , #544C4C 0%, #000000 80%);
+	*/
+	color: #EDEDED;
+	border-radius: 12px 12px 12px 12px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#browseEntity button:active {
+	margin-top: 2px;
+	
+}
+
+	/***** CUSTOM IMAGE BOX   ***************/
+	div.imageBox {
+		/*** LAYOUT ***/
+		display: none;
+		position: absolute;
+		z-index: 1300;		
+		
+		/*** TEXT ***/
+		color: white;
+
+		/*** BACKGROUND ***/
+		background: rgba(0,0,0,0.7);
+
+		/*** BOX MODEL ***/
+		margin-left: 42%;
+		
+		padding: 40px;
+		
+		border-radius: 12px 12px 12px 12px;
+	}
+		
+		div.imageBox span.close {
+			display: block;
+			float: right;
+
+			background: url("../images/close_comparison_entity.png") repeat-x scroll 0 0 transparent;
+
+			width: 20px;
+			height: 20px;
+			opacity: 0.6;
+		}
+		div.imageBox span.close:hover {
+			opacity: 0.9;
+			cursor: pointer;
+		}
+
+		div.imageBox img {
+			clear: both;
+			float: left;
+			border-radius: 8px 8px 8px 8px;
+		}
+		
+		div.imageBox p {
+			clear: both;
+			float: left;
+		}		
+	/***** END OF CUSTOM IMAGE BOX *********/
+
+
+	div#browseEntity button.browse-entity-next {
+		margin-left: 5px;
+		float: right;
+	}
+
+	#entityMessage, #entityInfo  ,#mediaGallery , #entityAttributes {
+		
+		background: #FCFCFC;
+		background: -webkit-gradient(linear, left top, left bottom, from(#C9CECF), to(#EAEAEA));
+		background-image: -moz-linear-gradient(center bottom , #C9CECF 0%, #EAEAEA 80%);
+		background-image: -o-linear-gradient(top,#C9CECF,#EAEAEA);
+		background-image: linear-gradient(center bottom , #C9CECF 0%, #EAEAEA 80%);
+		
+		margin-bottom:7px;
+	}
+	#entityMessageInner, #entityInfoInner, #mediaGalleryInner, #entityAttributesInner {
+		/*background-color: #EAEAEA;*/
+		background: #FCFCFC;
+		background: -webkit-gradient(linear, left top, left bottom, from(#C9CECF), to(#EAEAEA));
+		background-image: -moz-linear-gradient(center bottom , #C9CECF 0%, #EAEAEA 80%);
+		background-image: -o-linear-gradient(top,#C9CECF,#EAEAEA);
+		background-image: linear-gradient(center bottom , #C9CECF 0%, #EAEAEA 80%);
+		padding: 5px 0px 5px 10px;
+		border-radius: 8px 8px 8px 8px;
+	} 	 
+
+	#browseEntity h1.tabHeader {
+		background-color: #EAEAEA;
+		background-image: -moz-linear-gradient(center bottom , #C9CECF 0%, #FFFFFF 80%);
+		background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#C9CECF));
+		background-image: -ms-gradient(center bottom , #C9CECF 0%, #FFFFFF 80%);
+		background-image: -o-linear-gradient(top,#FFFFFF,#C9CECF);
+		
+		
+
+		border: 1px solid #FFFFFF;
+		border-radius: 8px 8px 8px 8px;
+		box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.25);
+	}
+		#browseEntity h1.tabHeader:hover {
+			background-color: #4C5355;
+			background-image: -moz-linear-gradient(center bottom , #FFFFFF  0%, #C9CECF  80%);
+			background: -webkit-gradient(linear, left top, left bottom, from(#C9CECF), to(#FFFFFF));
+			background-image: -ms-gradient(center bottom , #FFFFFF  0%, #C9CECF  80%);
+			background-image: -o-linear-gradient(top,#C9CECF,#FFFFFF);
+
+			cursor: pointer;
+
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+		}
+	#browseEntity #entityMessage {
+		
+		border: 2px ridge #FFFFFF;
+		border-radius: 8px 8px 8px 8px;
+	}
+	#browseEntity #entityMessage button.backToCategory {
+		float:right;
+		position: relative;
+		top: -3px;
+		width: auto;
+	}
+	
+	#entityInfoInner {
+		padding: 0;
+	}
+
+	#browseEntity #entityInfo{
+		height: 150px;
+		border: 2px ridge #FFFFFF;
+		border-radius: 8px 8px 8px 8px;
+	}
+		#browseEntity #entityInfo #basicInfoWrapper {
+			width:auto;
+		}
+		#browseEntity #entityInfo img.image{
+			/*** LAYOUT ***/
+			display:block;
+			float: left;			
+			width: 120px;
+			height: 120px;
+			/************** BORDER RADIUS ************/
+	        		border-radius: 7px;
+	        		-moz-border-radius:7px;
+	        		-o-border-radius:7px;
+		}
+		#browseEntity #entityInfo img.image:hover{
+				/*border: 2px solid #7a6d77;*/
+				cursor: pointer;
+				cursor: -moz-zoom-in;
+				cursor: -webkit-zoom-in;
+				cursor: -o-zoom-in;
+				cursor: url(../images/image_zoom_in.cur);
+				/*!important z-index:400;*/
+				/*width: 240px;*/
+				/*height: 240px;*/	
+				/*** TRANSITIONS ***/
+				-webkit-transition: all 0.2s ease-in-out;
+				-moz-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+		}
+		#browseEntity pre.description {
+			width: 400px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis-word;
+		}
+		#browseEntity #entityInfo #basicInfoWrapper #basicInfoRight {
+			display: inline-block;
+			margin-left: 10px;
+		}
+		#browseEntity #entityInfo h2.name {
+			width:200px;
+			/*** TEXT ***/
+			font-weight: bold;
+			text-overflow: ellipsis-word;
+		}
+		#browseEntity #entityInfo #modPanel {
+			float: right;
+			display: block;
+			width: 200px;
+		}
+		#browseEntity button.backToComparison {
+			float:right;
+		}
+	#browseEntity #mediaGallery {
+		
+		border: 2px ridge #FFFFFF;
+		border-radius: 8px 8px 8px 8px;
+	}
+	#browseEntity #entityAttributes {
+		
+		border: 2px ridge #FFFFFF;
+		border-radius: 8px 8px 8px 8px;
+	}

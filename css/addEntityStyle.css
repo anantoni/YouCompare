@@ -1,0 +1,14 @@
+/*****************************************************************************\
+|   Author  : Zorbas Dimitrios  1115 2007 00078                             **|
+|   contact : zorbash@hotmail.com                                           **|
+|   Project: YouCompare Site - Software Engineering Course Spring 2011      **|
+|   Description: Gui Part for add entity page  (css)                        **|
+|                                                                           **|   
+\*****************************************************************************/
+
+#dialog-form
+	/*** LAYOUT ***/
+	position: fixed;
+	!important z-index: 10;
+
+}

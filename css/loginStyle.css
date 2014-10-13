@@ -1,0 +1,83 @@
+/*******************************
+            Software Engineering 2011 - YouCompare Website
+            Code developed by Anastasios Antoniadis
+            May-June 2011
+            *******************************/
+
+hr { 
+        color: black;
+        width: 50%;
+    
+}
+
+#mainContainer ul li {
+        display: inline-block;
+        margin-right: 30px;
+}
+
+#mainContainer :link {
+        color: blue;
+}
+
+#mainContainer :visited {
+        color: blue;
+}
+
+#mainContainer input:focus {
+        border: 2px solid #EF4F7A;
+}
+
+#mainContainer #loginError {
+        color: red;
+}
+
+#mainContainer #loginResult {
+        font-weight: bold;
+}
+
+#mainContainer #loginButton {
+    
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            background-color: #00cc33;
+            color: white;
+            border-width: 0;
+            background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.75, rgb(83,201,24)), color-stop(0.29, rgb(34,122,72)) );
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+}
+
+#mainContainer #loginButton:hover {
+    
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            background-color: #00cc33;
+            color: black;
+            border-width: 0;
+            background-image: -webkit-gradient( linear, left bottom,left top, color-stop(0.75, rgb(116,194,0)), color-stop(0.2, rgb(151,255,15)));
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            
+}
+
+#login_panel {
+    
+        display: block;
+        text-shadow: black 1px -1px 0.5;
+        font-weight: bold;
+        margin-top: 40px;
+        width: 80% ;
+        min-width: 1000px;
+        background-color: #EAEAEA;
+        border-radius: 8px;
+        -moz-border-radius: 8px;
+        -o-border-radius: 8px;
+        border: 2px solid #FCFCFC;
+        box-shadow:1px 1px 10px #000000;
+}

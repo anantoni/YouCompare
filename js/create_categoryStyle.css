@@ -1,0 +1,264 @@
+/* 
+    Document   : createCategoryStyle.css
+    Created on : 26 Μαϊ 2011, 9:47:50 μμ
+    Author     : Lelouch
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#mainContainer hr {
+    width: 50%;
+}
+
+#create_category {
+    text-align: left;
+    padding: 0 0 0 0;
+    display: block;
+    overflow: hidden;
+}
+
+.create_category_label {
+
+    margin-right: 30px;
+    display: inline-block;
+    width: 250px;
+    overflow: hidden;
+    padding: 0;
+    background-color: red;
+
+}
+
+.distinct_attribute_label {
+
+    margin-right: 30px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    background-color: red;
+
+}
+
+#mainContainer textarea {
+
+    display: inline-block;
+    
+}
+
+#mainContainer ul{
+    
+    display: block;
+
+}
+
+#mainContainer ul li {
+    
+    display: inline-block;
+    vertical-align: top;
+}
+
+#create_category div {
+    display: inline-block;
+    
+}
+
+#addCountableAttributeButton {
+    position: relative;
+    left: -10%;
+    
+}
+
+#addDistinctAttributeButton {
+    position: relative;
+    left: 0%;
+  
+}
+
+#addUncomparableAttributeButton {
+    position: relative;
+    left: +10%;
+    
+}
+
+.ModalWindow {
+
+            padding: 20px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            position: absolute;
+            z-index: 9000;
+            background-color: #000;
+            display: none;
+            width: 800px;
+            height: 400px;
+            top: 25%;
+            left: 35%;
+            text-align: left;
+            font-weight: bold;
+            color: white;
+            opacity: 0.9;
+            overflow: auto;
+}
+
+.ModalWindow div {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+#Values-Weights {
+            display: block;
+}
+
+.addAttributeButton {
+    
+            border: 0;
+            width: 20%;
+            max-width: 20%;
+            min-width: 20%;
+            height: 40px;
+            font-weight: bold;
+            
+            display: inline-block;
+            vertical-align: middle;
+            
+            /************ BORDER RADIUS **************/
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+
+             background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0, rgb(235,240,236)),
+                    color-stop(0.99, rgb(1,55,97)),
+                    color-stop(0.47, rgb(22,176,247))
+            );
+            background-image: -moz-linear-gradient(
+                    center bottom,
+                    rgb(235,240,236) 0%,
+                    rgb(1,55,97) 99%,
+                    rgb(22,176,247) 47%
+            );
+}
+
+.addAttributeButton img {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+    
+}
+
+.addAttributeButton:hover {
+    
+            font-weight: bold;
+            color: white;
+            background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0.02, rgb(77,62,52)),
+                    color-stop(0.99, rgb(51,4,10)),
+                    color-stop(0.47, rgb(245,22,22))
+            );
+            background-image: -moz-linear-gradient(
+                    center bottom,
+                    rgb(77,62,52) 2%,
+                    rgb(51,4,10) 99%,
+                    rgb(245,22,22) 47%
+            );
+        
+}
+
+.closeButton {
+                    background-color: black;
+                    border: 20px;
+                    border: 0;
+                    padding: 0;
+                    color: white;
+                    height: 20px;
+                    vertical-align: middle;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                
+}
+
+.closeButton img {
+                    height: 20px;
+                    opacity: 0.6;
+}
+
+.closeButton:hover img {
+                    height: 20px;
+                    opacity: 1;
+                    
+}
+
+#createCategoryButton button:enabled {
+    
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            background-color: #00cc33;
+            color: white;
+            border-width: 0;
+            background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.75, rgb(83,201,24)), color-stop(0.29, rgb(34,122,72)) );
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            
+}
+
+#createCategoryButton .createCategoryButtonEnabled:hover {
+    
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            background-color: #00cc33;
+            color: black;
+            border-width: 0;
+            background-image: -webkit-gradient( linear, left bottom,left top, color-stop(0.75, rgb(116,194,0)), color-stop(0.2, rgb(151,255,15)));
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+    
+}
+
+#createCategoryButton :disabled {
+            
+            /************ BORDER RADIUS **************/
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            border-width: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            border: 2px ButtonFace;
+            color: GrayText;
+            cursor: no-drop;
+            
+}
+
+p.trigger {	
+	width: 100%;
+	font-weight: bold;
+	display: block;
+}
+
+p.trigger a {
+	color: black;
+	text-decoration: none;
+}
+
+p.trigger a:hover { color: red; }

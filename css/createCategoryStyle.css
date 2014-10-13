@@ -1,0 +1,21 @@
+
+
+
+#mainContainer #createCategory form #createCategoryAddattribute{
+	padding:10px;
+	width: 15%;
+	background: rgba(10, 10, 10, 0.25);
+	
+}
+
+#mainContainer #CreateCategory form #createCategoryAddAttribute:hover{
+	background: rgba(10, 10, 10, 0.45);
+	
+}
+#mainContainer #CreateCategory form #createCategoryAddAttribute:active{
+	background: rgba(10, 10, 10, 0.35);
+	
+}
+	#mainContainer #CreateCategory form #createCategoryAddAttribute ul li:hover{
+		background: rgba(10, 10, 10, 0.65);
+	}

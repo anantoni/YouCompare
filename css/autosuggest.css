@@ -1,0 +1,451 @@
+/*****************************************************************************\
+|        \  ,  /                                                            **|
+|     ' ,___/_\___, '           *****         ******                        **|            
+|        \ /o.o\ /              *    *          **                          **|
+|    -=   > \_/ <   =-          *     *         **                          **|
+|        /_\___/_\              *    *          **                          **|
+|     . `   \ /   ` .           *****         ******                        **|
+|         /  `  \                                                           **|
+|_____________________________________________________________________________|
+|   Created By : Antonopoulos Spyridon    1115 2006 00048                   **|
+|   contact me : sdi0600048@di.uoa.gr                                       **|
+|       Project: YouCompare Site - Software Engineering Course Spring 2011  **|
+|   Description: GUI part Css for AutoSuggest                               **|
+|        Lines : 447                                                        **|   
+\*****************************************************************************/
+
+#closeImage{
+   margin-left:190px;
+ }
+ #closeImage:hover{
+   cursor:pointer;
+ }
+  #closeImage2{
+   margin-left:429px;
+ }
+ #closeImage2:hover{
+   cursor:pointer;
+ }
+ 
+#extraBox{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-color: #262B31;
+    visibility:hidden;
+}
+
+
+#extraBoxDiv{
+    padding:0;
+    margin:0;
+    background-color: #262B31;
+    height: 300px;
+    overflow:auto;
+    padding-bottom: 30px;
+    margin-left:20px;
+    width: 541px;
+}
+
+
+
+#extraBoxTable{
+    display:table;
+    width:510px;
+    min-width:510px;
+    max-width:510px;
+    height:100%;
+    border:solid 5px;
+    background-color: #333;
+   /* fonts: Arial,Helvetica,sans-serif;	
+    font-size:14px;*/
+    font-size:85%;
+    margin:0;
+    padding: 5px;
+    
+    -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px 12px 12px 12px;
+    border: 4px solid #fcfcfc;
+    overflow:hidden;
+}
+
+
+#extraBoxImage{
+    width:140px;
+    height:120px;
+    -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+#extraBoxCell_1{
+    width:35%;
+    height:40%;
+}
+
+#extraBoxCell_2{
+   height:40%;
+   vertical-align:top;
+   text-align: left;
+   white-space: nowrap;
+}
+
+#extraBoxCell_2 ul {
+    padding-bottom: 2px;
+    text-align: left;
+    list-style-type: none;
+}
+
+#extraBoxCell_2 ul li{
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+
+#extraBoxCell_3{
+   
+
+     
+     width:100%;
+}
+#extraBoxCell_4{
+   
+
+     width:100%;
+}
+#extraBoxCell_5{
+     
+
+     width:100%;  
+}
+
+
+#extraBoxCell_5.a{
+
+}
+
+#extraBoxCell_5,#extraBoxCell_3,#extraBoxCell_4{
+   white-space:normal; 
+}
+
+#extraBoxCell_5,#extraBoxCell_3,#extraBoxCell_4,#extraBoxCell_2 {
+
+    vertical-align:top;
+    text-align:left;
+}
+
+.AusTagName{
+    color:#B6C0D3;
+}
+
+.AusTagVal{
+    color: #FFE1AF;
+    margin-left: 5px;
+}
+
+.AusPopName{
+    margin:0;
+    color: #FFE1AF;
+    padding: 0 6px;
+    vertical-align: middle;
+    
+}
+
+.AusPopName:hover{
+    cursor:pointer;
+    background-color: #105FE8;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+   
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    
+}
+.AuS_button:hover{
+    cursor:pointer;
+    border-radius: 12px;
+    border-color: #fcfcfc;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+.AuS_button{
+    display:block;
+    background-color: #435254;
+    border: 2px solid #fcfcfc;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+    color: white;
+    padding: 5px 25px 5px 25px;
+    text-decoration: none;
+    float:left;
+    font-size:90%;
+    margin-left: 80px;
+    margin-top: 3px;
+    padding: 5px 25px;
+}
+
+
+
+#myHeader{
+        margin:0;
+        position: absolute;
+        padding: 7px 0 0 0;
+	margin-top:2px;
+z-index : 1000
+}
+
+div.autosuggest
+{
+    margin:0;
+    padding:0;
+    -moz-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px 12px 12px 12px;
+    border: 2px solid #fcfcfc;
+z-index : 1000
+}
+
+div.autosuggest table {
+    z-index : 1000
+    overflow:hidden;
+    /* background from here*/
+    background-color: #262B31;
+    margin:0;
+    padding:0;
+    padding-top:10px; 
+    padding-bottom:7px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+
+div.autosuggest table tr
+{  
+    margin:0;
+    padding: 0;
+    width:100%;	 
+}
+
+div.autosuggest table tr td
+{
+    color: #ccc;
+    padding: 0;
+    margin:0;
+    text-align: left;
+    vertical-align:middle;
+}
+
+
+div.autosuggest table tr td.col_3:hover{
+    cursor:pointer;
+}
+/*
+div.autosuggest table tr td.col_2:hover{
+    cursor:pointer;
+}
+*/
+
+#emptyRow{
+   height:5px;
+   max-height:5px;
+   min-height:5px;
+}
+
+#lastRow{
+    height:5px;
+}
+
+#lastRow td{
+    height:5px;
+}
+
+.myhr_2{
+    width:100%;
+    padding:0 0 0 0;
+    margin:0;
+}
+
+div.autosuggest table tr td a
+{
+	color: #ccc;
+	display: block;
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: #000 0px 0px 5px;
+	position: relative;
+	padding: 0;
+        margin:0;
+}
+
+div.autosuggest table tr td.col_1 a,
+div.autosuggest table tr td.col_3 a
+{
+	color: #ccc;
+	display: block;
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: #333 0px 0px 5px;
+	position: relative;
+	padding: 0;
+        margin:0;
+}
+
+div.autosuggest table tr td.col_1 a:hover,
+div.autosuggest table tr td.col_3 a:hover
+{
+
+}
+
+div.autosuggest table tr td a:hover{
+}
+
+div.autosuggest table tr.data
+{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    width:100%;
+    height:26px;
+    min-height:26px;
+    max-height:26px;
+}
+
+div.autosuggest table tr td.col_1{
+    margin:0;
+    padding:0;
+    width:75px;
+    min-width:75px;
+    max-width:75px;
+    height:26px;
+    min-height:26px;
+    max-height:26px;
+}
+div.autosuggest table tr td.col_2{
+
+    width:215px;
+    min-width:215px;
+    max-width:215px;
+    margin:0;
+    padding:0;
+    height:26px;
+    min-height:26px;
+    max-height:26px;
+   
+}
+
+div.autosuggest table tr td.col_3{
+    width:15px;
+    min-width:15px;
+    max-width:15px;
+    margin:0;
+    padding:0;
+    margin-left:3px;
+    height:26px;
+    min-height:26px;
+    max-height:26px;
+}
+
+
+
+#as_highlight{
+            /*vertical-align:top;*/
+    background-color: #1B5CCD;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+
+div.autosuggest table tr td#as_highlight a:hover
+{
+    background-color: #1B5CCD;
+    cursor:pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+div.autosuggest table tr td a span
+{
+    display: block;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+
+div.autosuggest table tr td a span small
+{
+    font-weight: normal;
+    color: #999;
+}
+
+div.autosuggest table tr td#as_highlight a span small
+{
+    color: #ccc;
+}
+
+
+div.autosuggest table tr td.as_warning
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+div.autosuggest table tr em
+{
+    font-style: normal;
+    color: #6EADE7;
+}
+
+.mainOuterRateAs {
+        margin-top:4px;
+	display:inline-block;
+	width: 75px;
+    	height: 14px;
+    	background: url(../images/star_blank_as.png) repeat-x;
+		/* For IE 7 */
+	zoom: 1;
+	*display: inline;
+}
+
+.mainInnerRateAs {
+  	height: 14px;
+  	background: url(../images/star_full_as.png) repeat-x;
+ }
+ 
+.AusInlineTb{
+ padding:0;
+ margin:0;
+ background-color: #333 !important;   
+}

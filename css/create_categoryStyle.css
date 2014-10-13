@@ -1,0 +1,692 @@
+/*******************************
+            Software Engineering 2011 - YouCompare Website
+            Code developed by Anastasios Antoniadis
+            May-June 2011
+            *******************************/
+
+#mainContainer hr {
+                    width: 50%;
+}
+
+
+#general_info {
+                    display: inline-block;
+                    margin-left: 30px;
+           
+}
+
+#general_info span {
+            
+                    font-weight: normal;
+}
+
+.trigger {
+                    display: block;
+                    text-shadow: black 1px -1px 0.5;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    width: 98% ;
+                    background-color: #EAEAEA;
+                     border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -o-border-radius: 8px;
+                    padding-left: 2%;
+                    border: 2px solid #FCFCFC;
+                    text-align: left;
+    
+}
+
+.trigger:hover {
+                     background-color:#B5C3E0;
+                    cursor:Pointer;
+                    -moz-transition: .5s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+                    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                    box-shadow: 0 1px 3px rgba(0,0,0,.25);  
+    
+}
+
+
+
+.attribute_toggle {
+                    display: block;
+                    text-shadow: black 1px -1px 0.5;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    width: 98%;
+                    background-color: #EAEAEA;
+                     border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -o-border-radius: 8px;
+                    padding-left: 2%;
+                    border: 2px solid #FCFCFC;
+      
+}
+
+.attribute_toggle:hover {
+                     background-color:#B5C3E0;
+                    cursor:Pointer;
+                    -moz-transition: .5s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+                    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                    box-shadow: 0 1px 3px rgba(0,0,0,.25);  
+}
+
+#create_category {
+    
+            margin-top: 1px;
+            text-align: left;
+            padding: 0 0 0 0;
+            display: block;
+            overflow: hidden;
+            background-color: #EAEAEA;
+            border: 2px solid #FCFCFC;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            font-size: 90%;
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+            box-shadow:1px 3px 10px #000000
+
+            
+}
+
+.create_category_label {
+            
+            margin-left: 30px;
+            margin-right: 30px;
+            display: inline-block;
+            width: 250px;
+            overflow: hidden;
+            padding: 0;
+    
+}
+
+.distinct_attribute_label {
+
+            margin-right: 30px;
+            display: inline-block;
+            overflow: hidden;
+            padding: 0;
+   
+}
+
+
+
+#mainContainer textarea {
+            display: inline-block;
+    
+}
+
+#mainContainer ul{  
+                    display: block;
+
+}
+
+#mainContainer ul li {
+                    display: inline-block;
+                    vertical-align: top;
+}
+
+#create_category div {
+                    display: inline-block;
+    
+}
+
+#addCountableAttributeButton {
+                    position: relative;
+                    left: -10%;
+    
+}
+
+#addDistinctAttributeButton {
+                    position: relative;
+                    left: 0%;
+  
+}
+
+#addUncomparableAttributeButton {
+                    position: relative;
+                    left: +10%;
+    
+}
+
+.ModalWindow {
+
+                    padding: 20px;
+                    border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    position: absolute;
+                    z-index: 9000;
+                    display: none;
+                    width: 800px;
+                    height: 400px;
+                    top: 25%;
+                    left: 35%;
+                    text-align: left;
+                    font-weight: bold;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.9);
+                    overflow: auto;
+                
+}
+
+.ModalWindow div {
+                    display: inline-block;
+                    vertical-align: middle;
+    
+}
+
+#Values-Weights {
+                    display: block;
+}
+
+.editAttribute {
+    
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    color: white;
+                    -moz-border-radius: 6px;
+                    -webkit-border-radius: 6px;
+                    border-radius: 6px;
+                    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    background: url(../images/button_black_wide.jpg) repeat-x;
+                    
+}
+
+.editAttribute:hover {
+    
+                    cursor: pointer;
+                    -moz-border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    border-radius: 12px;
+                    -moz-transition: .4s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+                    
+}
+
+.removeAttribute {
+                    color: white;
+                    text-decoration: none;
+                    padding-right: 20px;
+                    -moz-border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    border-radius: 8px;
+                    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    background: url(../images/button_black_wide.jpg) repeat-x;
+            
+}
+
+.removeAttribute:hover {
+
+                    background: url(../images/button_black_wide.jpg) repeat-x;
+                    -moz-border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    border-radius: 12px;
+                    -moz-transition: .4s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+                    cursor: pointer;
+}
+
+#Attributes {
+                    text-align: left;
+                    padding: 0;
+}
+
+#userPanel {
+	z-index: 1;
+}
+.addAttributeButton {
+    
+                    border: 0;
+                    width: 20%;
+                    max-width: 20%;
+                    min-width: 20%;
+                    height: 40px;
+                    font-weight: bold;
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: white;
+                    /************ BORDER RADIUS **************/
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    border-radius: 8px;
+                     background: url(../images/button_black_wide.jpg) repeat-x;
+                   /* box-shadow: rgba(0, 0, 0, 0.496094) 0 2px 4px;*/
+                    text-align: left;
+                    padding:1px;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);  
+
+}
+
+.addAttributeButton img {
+            
+                    height: 38px;
+                    margin-right: 10px; 
+                    margin-left:1px;
+                    vertical-align: middle;
+                    width: 40px;
+    
+}
+
+.buttonInMsg {
+                    display: inline-block;
+                    text-align: center;
+                    width: 75%;
+}
+
+.addAttributeButton:hover {
+    
+                    font-weight: bold;
+                    color: white;
+                    cursor:pointer;
+                    border-radius: 12px;
+                    background-color: rgba(0,0,0,.10);
+                    -moz-transition: .4s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+      
+}
+
+.closeButton {
+                    background-color: black;
+                    border: 20px;
+                    border: 0;
+                    padding: 0;
+                    color: white;
+                    height: 20px;
+                    vertical-align: middle;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                
+}
+
+.closeButton img {
+                    height: 20px;
+                    opacity: 0.6;
+}
+
+.closeButton:hover img {
+                    height: 20px;
+                    opacity: 1;
+                    
+}
+
+.createCategoryButtonEnabled {
+    
+                    /************ BORDER RADIUS **************/
+                    border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    background-color: #00cc33;
+                    color: white;
+                    border-width: 0;
+                    background: #b4ddb4; /* Old browsers */
+background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(33%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C */
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+            
+}
+
+.createCategoryButtonEnabled:hover {
+    
+                    /************ BORDER RADIUS **************/
+                    border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    background-color: #00cc33;
+                    color: black;
+                    border-width: 0;
+                    background: #bfd255; /* Old browsers */
+background: -moz-linear-gradient(top, #bfd255 15%, #72aa00 88%, #9ecb2d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,#bfd255), color-stop(88%,#72aa00), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #bfd255 15%,#72aa00 88%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #bfd255 15%,#72aa00 88%,#9ecb2d 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #bfd255 15%,#72aa00 88%,#9ecb2d 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #bfd255 15%,#72aa00 88%,#9ecb2d 100%); /* W3C */  padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+    
+}
+
+#createCategoryButton:disabled {
+            
+                    /************ BORDER RADIUS **************/
+                    border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    border-width: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+                    border: 2px ButtonFace;
+                    color: GrayText;
+                    cursor: no-drop;
+            
+}
+
+.saveAttributeButton:disabled {
+            
+                    /*********** BORDER RADIUS *************/
+                    border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    border-width: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+                    border: 2px ButtonFace;
+                    cursor: no-drop;
+            
+}
+
+#legend {
+                    display: inline-block;
+                    margin-left: 30px;
+                    margin-top: 10px;
+}
+
+textarea:focus {
+                    border: 2px solid #EF4F7A;
+}
+
+#create_category input:focus {  
+    
+                    border: 2px solid #EF4F7A; 
+}    
+
+.ModalWindow input:focus {  
+    
+                    border: 2px solid #EF4F7A; 
+} 
+
+getCategoryTemplateName {
+                    border: 2px solid #EF4F7A;
+}
+
+#CountableAttributes {
+                    display: none;
+    
+}
+
+#DistinctAttributes {
+                    display: none;
+    
+}
+
+#UncomparableAttributes {
+                    display: none;
+                    margin-bottom: 30px;
+    
+}
+
+#ButtonSection {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+}
+
+#general_category_info {
+                    display: block;
+                    background-color: #EAEAEA;
+                    width: 100%;
+}
+
+.Table {
+                    padding: 0;
+                    margin: 0;
+                    border-collapse: collapse;
+                    border: 1px solid #333;
+                    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+                    font-size: 80%;
+                    color: #000;
+                    table-layout: fixed;
+                    width: 100%;
+                    border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -o-border-radius: 8px;
+                    background: url(../images/table-background.jpg) repeat;
+}
+
+.Table caption {
+                    caption-side: bottom;
+                    font-size: 0.9em;
+                    font-style: italic;
+                    text-align: right;
+                    padding: 0.5em 0;
+                    
+}
+
+.Table th, .Table td {
+                    border: 1px dotted #666;
+                    padding: 0.5em;
+                    text-align: left;
+                    color: #632a39;
+                    max-width: 50%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;               
+                    
+}
+
+.Table th[scope=col] {
+                    color: #000;
+                    background-color: #8fadcc;
+                    text-transform: uppercase;
+                    font-size: 0.9em;
+                    border-bottom: 2px solid #333;
+                    border-right: 2px solid #333;
+  
+}
+
+.Table th+th[scope=col] {
+                    color: #fff;
+                    background-color: #7d98b3;
+                    border-right: 1px dotted #666;
+}
+
+.Table th[scope=row] {
+                    background-color: #b8cfe5;
+                    border-right: 2px solid #333;
+                    
+}
+
+.Table tr.alt th, .Table tr.alt td {
+                    color: black;
+                    
+}
+
+.Table tr:hover th[scope=row], .Table tr:hover td {
+                    background-color: #0D9301;
+                    color: #fff;
+                    
+}
+
+#mainContainer {
+    
+                    padding-right: 30px;
+                    margin-right: 0px;    
+}
+
+.distinct_value_weight {
+                    display: block;
+                    width: 100%;
+                    
+}
+
+.remove_image {
+                    width: 18px;
+                    height: 18px;
+                    vertical-align: top;
+                    margin-right: 5px;
+}
+
+#editCountableAttributeResult {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+}
+
+#editDistinctAttributeResult {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+    
+}
+
+#editUncomparableAttributeResult {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+    
+}
+
+#iframe_panel {
+                    display: inline-block;
+                    
+}
+
+#template_panel {
+                    width: 100%;
+}
+
+#getCategoryTemplateName {
+                    width: 200px;
+}
+
+#getCategoryTemplateButton {
+    
+                    border: 0;
+                    color: white;
+                    text-align: center;
+                    margin-left: 40px;
+                    display: inline-block;
+                    height: 25px;
+                    font-weight: bold;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-decoration: none;
+                    -moz-border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    border-radius: 8px;
+                    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    background: url(../images/button_black_wide.jpg) repeat-x;
+    
+}
+
+#categoryTemplateError {
+                    margin: 0;
+                    padding: 0;
+                    display: inline-block;
+                    margin-left: 40px;
+                    font-weight: bold;
+                    width: 300px;
+}
+
+#getCategoryTemplateButton:hover {
+                    cursor: pointer;
+                    -moz-border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    border-radius: 12px;
+                    -moz-transition: .4s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+                    
+    
+}
+
+.distinctValueButton {
+                    border: 0;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    color: black;
+                    -moz-border-radius: 6px;
+                    -webkit-border-radius: 6px;
+                    border-radius: 6px;
+                    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    background-image: url(../images/graphite_button.jpg);
+                    background-repeat: repeat-x;
+                    background-position: center;
+                    display: inline-block;
+                    height: 26px;
+                    font-weight: bold;
+    
+}
+
+.distinctValueButton:hover {
+                    cursor: pointer;
+                    -moz-border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    border-radius: 12px;
+                    -moz-transition: .4s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;
+}
+
+.distinctValueButton {
+                    border: 0;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    color: black;
+                    -moz-border-radius: 6px;
+                    -webkit-border-radius: 6px;
+                    border-radius: 6px;
+                    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+                    background-image: url(../images/graphite_button.jpg);
+                    background-repeat: repeat-x;
+                    background-position: center;
+                    display: inline-block;
+                    height: 26px;
+                    font-weight: bold;
+    
+}
+
+.distinctValueButton:hover {
+                    cursor: pointer;
+                    -moz-border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    border-radius: 12px;
+                    -moz-transition: .4s ease-in-out;
+                    -webkit-transition: .2s ease-in-out;
+                    transition: .2s ease-in-out;

@@ -1,0 +1,196 @@
+/* 
+    Document   : manage_account
+    Created on : 15 Ιουν 2011, 9:59:30 μμ
+    Author     : Lelouch
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+hr {
+                width: 50%;
+}
+
+#mainContainer {
+    
+                padding-right: 30px;
+                margin-right: 0px;
+}
+
+#manageAccount {
+    
+                display: block;
+                text-shadow: black 1px -1px 0.5;
+                font-weight: bold;
+                margin-top: 40px;
+                width: 100% ;
+                min-width: 1200px;
+                background-color: #EAEAEA;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -o-border-radius: 8px;
+                border: 2px solid #FCFCFC;
+                height: 440px;
+                box-shadow:1px 1px 10px #000000;  
+}
+
+#manageAccountHeader {
+                display: block;
+                width: 100%;
+                height: 40px;
+}
+
+#optionPanel {
+               height: 400px;
+               display: inline-block;
+               width: 206px;
+               float: left;
+    
+}
+
+#changeForms {
+                display: inline-block;
+                width: 900px;
+                height: 400px;
+                text-align: left;
+
+}
+
+#optionPanel ul {
+                display: block;
+                margin-top: 60px;
+    
+}
+
+#optionPanel ul  {
+                
+                display: block;
+                background-color: #EAEAEA;;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -o-border-radius: 8px;
+                cursor: pointer;
+}
+
+#optionPanel ul li {
+                
+                display: block;
+                width: 200px;
+                min-width: 200px;
+                height: 30px;
+                min-height: 30px;
+                background-color: #EAEAEA;
+                border-radius: 2px;
+                -moz-border-radius: 2px;
+                -o-border-radius: 2px;
+                -moz-box-shadow: 2px 2px 3px rgba(0,0,0,.25);
+                -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.25);
+                box-shadow: 2px 2px 3px rgba(0,0,0,.25);
+                text-align: center;
+                border: 2px solid #FCFCFC;
+                margin-bottom: 1px;
+                vertical-align: middle;
+                
+}
+
+#optionPanel ul li:hover {
+    
+                background-color:#B5C3E0;
+                cursor:Pointer;
+                border-radius: 4px;
+                -moz-border-radius: 4px;
+                -o-border-radius: 4px;
+                -moz-transition: .5s ease-in-out;
+                -webkit-transition: .2s ease-in-out;
+                transition: .2s ease-in-out;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                box-shadow: 2px 1px 3px rgba(0,0,0,.25);  
+                
+}
+
+#general_info {
+                display: block;
+}
+
+.Form {
+                margin-top: 60px;
+                margin-left: 200px;
+                display: none;
+                min-width: 700px;
+                overflow: auto;
+                width: 800px;                
+                
+}
+
+.Form label {
+                display: inline-block;
+                width: 300px;
+                margin-right: 50px;
+                
+}
+
+.buttonSection {
+                margin-top: 30px;
+    
+}
+
+.ButtonEnabled {
+    
+                    /************ BORDER RADIUS **************/
+                    border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    background-color: #00cc33;
+                    color: white;
+                    border-width: 0;
+                    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.75, rgb(83,201,24)), color-stop(0.29, rgb(34,122,72)) );
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+            
+}
+
+.ButtonEnabled:hover {
+    
+                    /************ BORDER RADIUS **************/
+                    border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    background-color: #00cc33;
+                    color: black;
+                    border-width: 0;
+                    background-image: -webkit-gradient( linear, left bottom,left top, color-stop(0.75, rgb(116,194,0)), color-stop(0.2, rgb(151,255,15)));
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+    
+}
+
+.Button:disabled {
+            
+                    /************ BORDER RADIUS **************/
+                    border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    -o-border-radius: 20px;
+                    border-width: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+                    border: 2px ButtonFace;
+                    color: GrayText;
+                    cursor: no-drop;
+            
+}
+
+.manage_account_input:focus {
+                    border: 2px solid #EF4F7A;
+}

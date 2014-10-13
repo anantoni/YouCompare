@@ -1,0 +1,21 @@
+<!-- header elements -->
+		
+	<div id="header">
+			<div class="logoTitleWrapper">
+			       	<a class="logo" href="./index.php" title="Visit the main page [alt-m])" accesskey="m"><img src="images/scalesLogo3.png" alt="logo"></a>        	
+				<a class="siteTitle" href="./index.php" title="Visit the main page [alt-m])" accesskey="m"><h1>YouCompare!</h1>	</a>
+			</div>
+			<div class="InputWrapper">
+				<form action="./search.php">
+					<input id="testinput_xml" class="searchBar" name="sq" type="text" placeholder="enter query!" style="width:320px;"/>
+					<button><span>&nbsp;</span></button>		
+				</form>
+			</div>
+<script type="text/javascript">
+		var options_xml = {
+			script: function (input) { return "./ajax/autoSearch.php?aid="+input},
+			varname:"input"
+		};
+		var as_xml = new bsn.AutoSuggest('testinput_xml', options_xml);
+	</script>
+	

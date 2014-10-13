@@ -1,0 +1,367 @@
+/*****************************************************************************\
+|   Author  : Zorbas Dimitrios  1115 2007 00078                             **|
+|   contact : zorbash@hotmail.com                                           **|
+|   Project: YouCompare Site - Software Engineering Course Spring 2011      **|
+|   Description: main css for all the main elements of the pages            **|
+|                                                                           **|   
+\*****************************************************************************/
+
+
+html{
+	height: 100%;
+	color: black;
+	font-size: 16px;
+	fonts: Arial,Helvetica,sans-serif;	
+}
+
+h1 {
+	color: #000;
+	margin-bottom: .15em;
+	font-size: 18px;
+	text-shadow: 0 1px 0 rgba(255,255,255,.48);
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+h4 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover{
+	outline: none;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #eee;
+	margin: 0;
+}
+
+input,textarea,select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+body {
+	/*** TEXT ***/
+	font-size: 100%;
+	/***BACKGROUND***/
+	background-color: #4c5355;
+	background-image:url('../images/texture_neutral.png');
+	font-family: "Lucida Grande", sans-serif;
+	height:100%;
+	z-index: 0;
+        margin: 0;
+}
+
+
+/*************************************************************************************** HEADER CSS - START *****************************************************************************************/
+        #header {
+
+                /*** LAYOUT ***/
+                display: block;
+                /***BACKGROUND***/
+                background-image:url('../images/texture_dark.png');
+                /*** BOX MODEL ***/
+                top: 0;
+                left: 0;
+                width: 100%;	
+                height: 70px;	
+                padding: 0;
+                margin: 0;	
+
+        }
+
+        #header div.logoTitleWrapper {
+            
+                float: left;
+                position: relative;
+                width: 330px;
+                top: 10px;
+                margin-left: 10px !important;
+        }
+
+        #header a.logo {
+                /*** LAYOUT ***/
+                display: block;
+                float: left;
+        }
+
+        #header a.logo:hover {
+            
+                opacity: 0.8;
+                -webkit-transform: rotate(10deg);
+                -moz-transform: rotate(10deg);
+                transform: rotate(10deg);
+
+                /*** TRANSITIONS ***/
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+        }
+
+        #header a.logo img{
+                position:relative;
+                height:40px;
+                width:42px;
+
+        }
+
+        #header a.siteTitle{
+                /***LAYOUT ***/
+                position:relative;
+
+        }
+
+        #header a.siteTitle:hover {
+                opacity: 0.5;
+                /*** TRANSITIONS ***/
+                -webkit-transition: opacity 0.5s ease-in-out;
+                -moz-transition: opacity 0.5s ease-in-out;
+                transition: opacity 0.5s ease-in-out;
+
+        }
+        #header h1 {
+                /***LAYOUT ***/
+                position: relative;
+                display: inline;
+
+                /*** BOX MODEL ***/		
+                top: -8px;
+                /*** Text ***/
+                color: #dfe0e2;
+                font-family: 'Lobster', serif;
+                font-size: 2.625em;
+                font-style: normal;
+                font-weight: 800;
+                text-shadow: 8px 4px 4px #333;
+                text-decoration: none;
+                text-transform: none;
+                letter-spacing: 0.040em;
+                word-spacing: -0.04em;
+
+                /*** OTHER ***/
+                cursor: pointer;        
+        }
+
+        #header div.InputWrapper {
+                display: block;
+        }
+
+        #header div.InputWrapper form {
+
+                display: block;
+                float: left;
+                position: relative;
+                top:12px;
+        }	
+
+        #header div.InputWrapper form input.searchBar {
+
+                /***LAYOUT ***/
+                display: block;
+                float: left;
+
+                /*** BACKGROUND ***/
+                background-image: url("../images/content_texture.png");
+
+                /*** TEXT ***/
+                font-size: 130%;
+                text-shadow: 1px 1px 1px rgba(0,0,0,.70);
+                /*** BOX MODEL ***/
+
+                /***width as requested for autosuggest***/
+                width: 320px;
+                height: 39px;
+                border: 1px; 
+                border-color: #4c5355;
+                border-bottom: 0;
+                
+                /************** BORDER RADIUS ************/
+                border-radius: 7px;
+                -moz-border-radius:7px;
+                -o-border-radius:7px;
+        }
+
+        #header div.InputWrapper form input.searchBar:hover {
+
+               /* border: 2px solid #FFB300;
+                border-bottom: 0;*/
+
+                /*** TRANSITIONS ***/
+               /* -webkit-transition: all 0.5s ease-in-out 0s;
+                -moz-transition: all 0.5s ease-in-out 0s;
+                transition: all 0.5s ease-in-out 0s;	*/
+        }
+
+        #header div.InputWrapper form button {
+
+                /*** LAYOUT ***/
+                display: block;
+                float: right;
+                position: relative;
+                /*** BACKGROUND ***/
+                background-image: url("../images/magnifierHt.png");
+
+                /*** BOX MODEL ***/
+                top: 1px;
+                width: 50px;
+                height: 39px;
+                margin-left: 10px;
+                /************* BORDER RADIUS ************/
+                border-radius: 7px;
+                -moz-border-radius:7px;
+                -o-border-radius:7px;
+                /*** OTHER ***/
+                cursor: pointer;
+
+        }
+
+        #header div.InputWrapper form button:hover {
+
+                opacity: 0.8;
+                border: 2px solid #FFB300;
+               /* -webkit-transform: rotate(-5deg) scale(1.1) translate(20px);
+                -moz-transform: rotate(-5deg) scale(1.1) translate(20px);
+                transform: rotate(-5deg) scale(1.1) translate(20px);
+
+                
+                -webkit-transition: all 0.5s ease-in-out 0s;
+                -moz-transition: all 0.5s ease-in-out 0s;
+                transition: all 0.5s ease-in-out 0s;*/
+
+        }
+        /*************************************************************************************** HEADER CSS - END *******************************************************************************************/
+
+        /*************************************************************************** MAIN CONTAINER CSS - START **********************************************************************************/
+        #mainContainer {
+            
+                /*** LAYOUT ***/
+                overflow: auto;	
+
+                /*** BACKGROUND ***/
+                background-color: #dfe0e2;
+                background-image:url('../images/content_texture.png');
+
+                /*** BOX MODEL ***/
+                min-width: 1000px;
+                min-height: 800px;
+                width: 100%;
+                
+                padding-top: 0;
+                margin: 0;
+
+                /********** BORDER RADIUS ************/
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+
+        }
+        /**************************************************************************** MAIN CONTAINER CSS - END ************************************************************************************/
+
+
+
+        /******************************************************************************* FOOTER CSS - START ***************************************************************************************/
+        #footer {
+
+                display: block;
+
+                text-shadow: 0px -1px 0px #000;
+
+                /*padding-top:2%;*/
+                color: #E1DFE2;
+                width: 100%;
+        }
+
+        #footer span{
+                margin-left:3%;
+        }
+
+        #footer a{
+                clear: both;
+                float: right;
+                color: #E1DFE2;
+        }
+
+        #footer a:hover{
+                color: #A2A89F;
+        }
+
+        #footer ul{
+                display: inline;
+        }
+
+	#footer ul li{
+		display: inline-block;
+	}
+		#footer ul li a{
+			display:block;
+			width: 20px;
+			height: 20px;
+		}
+		#footer ul li a:hover{
+			-webkit-transform: scale(1.3);
+			-moz-transform:  scale(1.3);
+			transform:  scale(1.3);
+			/*** TRANSITIONS ***/
+			-webkit-transition: all 1s ease-in-out;
+			-moz-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+		}
+		#footer ul li a.facebookBtn{
+			background-image: url('../images/facebook.png');	
+		}
+		#footer ul li a.twitterBtn{
+			background-image: url('../images/twitter.png');
+		}
+		#footer ul li a.deliciousBtn{
+			background-image: url('../images/delicious.png');
+		}
+		#footer ul li a.diggBtn{
+			background-image: url('../images/digg.png');
+		}
+	#footer hr{
+		/*** BOX MODEL ***/
+		width:70%;
+		margin-top:1%;
+		margin-left:15%;
+		border: 0 0 1px 0 solid #4c5355;
+			/*** BOX SHADOW ***/
+			moz-box-shadow: 1px 2px 2px 2px #292A2E;
+	        	-webkit-box-shadow: 1px 2px 2px 2px #292A2E;
+	        	box-shadow: 1px 2px 2px 2px #292A2E;
+	}
+	#footer table{
+		margin-top:1%;
+		margin-left:41%;
+	}
+		#footer table td {
+        		padding-left: 5px;
+        		text-align: center;
+		}
+	#footer img:hover{
+		opacity: 0.5;
+	}
+/******************************************************************************** FOOTER CSS - END *****************************************************************************************/
