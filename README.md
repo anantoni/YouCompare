@@ -1,11 +1,13 @@
 Development Team:
 =================
 
-Antoniadis Anastasios
-Antonopoulos Spyridon
-Galanos Athanasios
-Grigoropoulos Panagiotis
-Falangitis Stefanos
-Zorbas Dimitrios
-Sakellari Elisavet
+<ul>
+<li>Antoniadis Anastasios</li>
+<li>Antonopoulos Spyridon</li>
+<li>Galanos Athanasios</li>
+<li>Grigoropoulos Panagiotis</li>
+<li>Falangitis Stefanos</li>
+<li>Zorbas Dimitrios</li>
+<li>Sakellari Elisavet</li>
+</ul>
 
